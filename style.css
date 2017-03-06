@@ -595,13 +595,13 @@ table img{
 }
 
 #linkedIn_icon {
-	background-image: url(images/linkedIn.png);
+	background-image: url(images/LinkedIn.png);
 	background-size: cover;
 	width: 110px;
 	height: 110px;
 }
 #linkedIn_icon:hover {
-	background-image: url(images/linkedIn_dark.png);
+	background-image: url(images/LinkedIn_dark.png);
 }
 
 #ART_icon {
