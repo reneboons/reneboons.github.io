@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ren&eacute Boons | Contact</title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<meta name="description" content="De kunstgalerij van René Boons." />
+	<meta name="keywords" content="kunstgalerij, rene boons, portfolio, schilderij, schilderijen" />
+	
+	<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<div id="wrapper">
+
+
+
+
+
+		<div id="header">
+			<div id="logo">
+				<a href="index.html"><img id="logo_img"src="images\logo.jpg" /></a>
+			</div>
+
+
+			<div id="navbar">
+				<ul>
+					<li><a href="index.html">Galerij</a>
+						<ul>
+							<li><a href="abstract.html">Abstract</a></li>
+							<li><a href="figuratief.html">Figuratief</a></li>
+						</ul>
+					</li>
+					<li><a href="exposities.html">Exposities</a></li>
+					<li><a href="overmij.html">Over mij</a></li>
+					<li id="navActive"><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content">
+			<div id="contact">
+				<p>Wilt u meer over mij weten? Dan kunt u mij vinden op de volgende pagina's.</p>	
+
+				<div id="links">
+					<div id="linkedin_link">
+						<a href="https://nl.linkedin.com/in/rene-boons-7446132/nl" target="_blank"><div id="linkedIn_icon"></div></a>
+						<a href="https://nl.linkedin.com/in/rene-boons-7446132/nl" target="_blank">LinkedIn /<br />Ren&eacute Boons</a>
+					</div>
+
+					<div id="ART_link">
+						<a href="http://ateliersrt.nl/rene-boons/" target="_blank"><div id="ART_icon"></div></a>
+						<a href="http://ateliersrt.nl/rene-boons" target="_blank">AteliersRT /<br />Ren&eacute Boons</a>
+					</div>
+				</div>
+
+				<p>Voor vragen kunt u mij direct benaderen door middel van onderstaand formulier. Ik zal zo spoedig mogelijk op u reageren.</p>
+				<form action='contactform.php' method='post'>
+					<input name="emailInput" placeholder="e-mailadres" maxlength="50" required></input>
+					<input id="subjectInput" name="subjectInput" placeholder="onderwerp" maxlength="50" required></input>
+					<textarea type="text" id="messageInput" name="messageInput" placeholder="bericht..." maxlength="500" required onkeyup="countChar()"></textarea>
+					<input name="submit" type="submit" value="Verstuur bericht"></input>
+					<p id="charLeft">500</p>
+				</form>
+			</div>
+
+
+		</div>
+
+		<div id="footer">
+			<div id="copyright"><p>&copy 2016 Ren&eacute Boons &nbsp  | &nbsp Alle rechten voorbehouden</p></div>
+			<div id="creator"><p>Website door Felix Boons</p></div>
+		</div>
+
+
+
+
+	</div>
+	<?php include 'contactform.php' ;?>
+	<script src="script.js" type="text/javascript"> </script>
+
+</body>
+</html>
