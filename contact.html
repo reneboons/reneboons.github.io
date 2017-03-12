@@ -54,10 +54,10 @@
 				</div>
 
 				<p>Voor vragen kunt u mij direct benaderen door middel van onderstaand formulier. Ik zal zo spoedig mogelijk op u reageren.</p>
-				<form action='contactform.php' method='post'>
+				<form action='https://formspree.io/felixboons@hotmail.com' method='post'>
 					<input name="emailInput" placeholder="e-mailadres" maxlength="50" required></input>
-					<input id="subjectInput" name="subjectInput" placeholder="onderwerp" maxlength="50" required></input>
-					<textarea type="text" id="messageInput" name="messageInput" placeholder="bericht..." maxlength="500" required onkeyup="countChar()"></textarea>
+					<input name="subjectInput" id="subjectInput" placeholder="onderwerp" maxlength="50" required></input>
+					<textarea name="messageInput" type="text" id="messageInput" placeholder="bericht..." maxlength="500" required onkeyup="countChar()"></textarea>
 					<input name="submit" type="submit" value="Verstuur bericht"></input>
 					<p id="charLeft">500</p>
 				</form>
