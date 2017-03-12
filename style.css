@@ -651,7 +651,7 @@ textarea:focus, input:focus {
 }
 
 
-input[name=Emailadress] {
+input[name=emailadress] {
 	position: relative;
 	display: inline-block;
 	width: 360px;
@@ -669,7 +669,7 @@ input[name=Emailadress] {
 	font-style: italic;
 }
 
-input[name=Onderwerp] {
+input[name=onderwerp] {
 	position: relative;
 	display: inline-block;
 	width: 360px;
@@ -687,7 +687,7 @@ input[name=Onderwerp] {
 
 }
 
-textarea[name=Bericht] {
+textarea[name=bericht] {
 	position: relative;
 	display: block;
 	height: 160px;
@@ -723,7 +723,7 @@ p.formtext {
 	padding-left: 15px
 }
 
-input[name=Verzendknop] {
+input[name=verzendknop] {
 	background-color: white;
 	display: inline-block;
 	padding: 7px 7px;
