@@ -283,7 +283,7 @@ ul li:hover a {
 
 #arrow_left {
 	position: absolute;
-	background-image: url(images/arrow_left_roundedcube2.png);
+	background-image: url(images/Arrow_left_roundedcube2.png);
 	background-size: cover;
 	left: 0px;
 	top: 240px;
@@ -295,14 +295,14 @@ ul li:hover a {
 }
 
 #arrow_left:hover {
-	background-image: url(images/arrow_left_roundedcube.png);
+	background-image: url(images/Arrow_left_roundedcube.png);
 	z-index: 4;
 	transition: .1s ease-out;
 }
 
 #arrow_right {
 	position: absolute;
-	background-image: url(images/arrow_right_roundedcube2.png);
+	background-image: url(images/Arrow_right_roundedcube2.png);
 	background-size: cover;
 	right: 0px;
 	top: 240px;
@@ -315,7 +315,7 @@ ul li:hover a {
 }
 
 #arrow_right:hover {
-	background-image: url(images/arrow_right_roundedcube.png);
+	background-image: url(images/Arrow_right_roundedcube.png);
 	z-index: 4;
 }
 
