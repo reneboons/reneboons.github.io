@@ -651,7 +651,7 @@ textarea:focus, input:focus {
 }
 
 
-input[name=emailInput] {
+input[name=Emailadress] {
 	position: relative;
 	display: inline-block;
 	width: 360px;
@@ -669,7 +669,7 @@ input[name=emailInput] {
 	font-style: italic;
 }
 
-input[name=subjectInput] {
+input[name=Onderwerp] {
 	position: relative;
 	display: inline-block;
 	width: 360px;
@@ -687,7 +687,7 @@ input[name=subjectInput] {
 
 }
 
-textarea[name=messageInput] {
+textarea[name=Bericht] {
 	position: relative;
 	display: block;
 	height: 160px;
@@ -723,7 +723,7 @@ p.formtext {
 	padding-left: 15px
 }
 
-input[name=submit] {
+input[name=Verzendknop] {
 	background-color: white;
 	display: inline-block;
 	padding: 7px 7px;
@@ -736,7 +736,7 @@ input[name=submit] {
 	font-size: 18px;
 }
 
-input[name=submit]:hover, input[name=submit]:focus {
+input[name=Verzendknop]:hover, input[name=Verzendknop]:focus {
 	cursor: pointer;
 
 	box-shadow: 0 0 2px 0px #ba473e;
