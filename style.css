@@ -547,7 +547,7 @@ table img{
 	background-size: cover;
 	width: 1200px;
 	height: 510px;	
-	margin-top: 30px; margin-bottom: -60px;
+	margin-top: 30px; margin-bottom: 60px;
 	padding: 30px 0 30px 0;
 }
 #papaBG p {
