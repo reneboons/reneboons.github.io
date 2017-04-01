@@ -54,7 +54,7 @@ function slideImg() {
 		imagecount = total;
 	}
 
-	Image.src = "photos/" + stijl + "/photo" + imagecount + ".jpg";
+	Image.src = "reneboons.github.io/photos/" + stijl + "/photo" + imagecount + ".jpg";
 	console.log("imagecount (to set image) = " + imagecount);
 
 	setTimeout(fadeInImg, 0);
