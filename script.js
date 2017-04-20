@@ -128,8 +128,8 @@ function changeInfo(index) {
 		["'Scenery'", "50 x 50 (cm)", "Acryl op doek", "Vóór 2010", "425,- (\&#8364)"],
 		["'Oehoe'", "40 x 50 (cm)", "Acryl op doek", "Vóór 2010", "N.t.k."],
 		["'Kippenbende'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
-		["'Kuifhoenhaan'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
-		["'Barnevelderhaan'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
+		["'Kuifhoen Haan'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
+		["'Barnevelder Haan'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
 		["'Poppies'", "80 x 60 (cm)", "Acryl op doek", "YYYY", "375,- (\&#8364)"]
 	];
 
