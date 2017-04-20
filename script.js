@@ -30,9 +30,9 @@ function countChar() {
 //INITIALISEER HET TOTAAL AANTAL FOTO'S OP DE BETREFFENDE PAGINA'S (ZODAT DE LEFT & RIGHT ARROW KEY GELIJK WERKEN)
 var total;
 $(document).ready(function(){
-	if (window.location.href.slice(-10) === "atief.html") { //als gebruiker op de figuratiefpagina zit, het totaal aantal foto's = 13
+	if (window.location.href.slice(-10) === "atief.html") {
 		total = figTotal; //verander dit als er meer/minder foto's zijn
-	} else if (window.location.href.slice(-10) === "tract.html") { //als gebruiker op de abstractpagina zit, het totaal aantal foto's = 19
+	} else if (window.location.href.slice(-10) === "tract.html") {
 		total = abstrTotal; //verander dit als er meer/minder foto's zijn
 	}
 	console.log("Total images on this page = " + total);
