@@ -1,3 +1,8 @@
+//HET TOTAAL AANTAL AAN ABSTRACTE/FIGURATIEVE SCHILDERIJEN
+var abstrTotal = 20;
+var figTotal = 16;
+
+
 //FADE IN PHOTO------------------------------------------------------------
 function fadeIn() {
 	var menu = document.getElementById('keuze_menu');
@@ -26,9 +31,9 @@ function countChar() {
 var total;
 $(document).ready(function(){
 	if (window.location.href.slice(-10) === "atief.html") { //als gebruiker op de figuratiefpagina zit, het totaal aantal foto's = 13
-		total = 13; //verander dit als er meer/minder foto's zijn
+		total = figTotal; //verander dit als er meer/minder foto's zijn
 	} else if (window.location.href.slice(-10) === "tract.html") { //als gebruiker op de abstractpagina zit, het totaal aantal foto's = 19
-		total = 18; //verander dit als er meer/minder foto's zijn
+		total = abstrTotal; //verander dit als er meer/minder foto's zijn
 	}
 	console.log("Total images on this page = " + total);
 })
@@ -122,17 +127,20 @@ function changeInfo(index) {
 	//LIJST VAN INFO VOOR FIGURATIEVE KUNST
 	var figuratieven = [["'Crazy Chick'", "60 x 60 (cm)", "Acryl op doek", "Vóór 2010", "475,- (\&#8364)"],	//INFO BIJ FOTO 1
 		["'Brandrode Koe'", "50 x 70 (cm)", "Acryl op doek", "Vóór 2010", "425,- (\&#8364)"],				//INFO BIJ FOTO 2
-		["'Owl'", "60 x 60 (cm)", "Acryl op doek", "Vóór 2010", "425,- (\&#8364)"],							//INFO BIJ FOTO 3
+		["'Koolzaadveld'", "70 x 50 (cm)", "Acryl op doek", "Vóór 2010", "Verkocht"],							//INFO BIJ FOTO 3
 		["'La Joconde'", "60 x 60 (cm)", "Acryl op doek", "Vóór 2010", "425,- (\&#8364)"],					//ETC ETC
 		["'Vos'", "60 x 80 (cm)", "Acryl op doek", "YYYY", "475,- (\&#8364)"],
 		["'Le Chef De Bande'", "60 x 80 (cm)", "Acryl op doek", "YYYY", "550,- (\&#8364)"],
 		["'Zwartbont tussen de schuifdeuren'", "70 x 50 (cm)", "Acryl op doek", "Vóór 2010", "500,- (\&#8364)"],
 		["'Scenery'", "50 x 50 (cm)", "Acryl op doek", "Vóór 2010", "425,- (\&#8364)"],
 		["'Oehoe'", "40 x 50 (cm)", "Acryl op doek", "Vóór 2010", "N.t.k."],
-		["'Kippenbende'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
+		["'Groep Varkens'", "60 x 50 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
 		["'Kuifhoen Haan'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
 		["'Barnevelder Haan'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
-		["'Poppies'", "80 x 60 (cm)", "Acryl op doek", "YYYY", "375,- (\&#8364)"]
+		["'Poppies'", "80 x 60 (cm)", "Acryl op doek", "YYYY", "375,- (\&#8364)"],
+		["'Owl'", "60 x 60 (cm)", "Acryl op doek", "Vóór 2010", "425,- (\&#8364)"],
+		["'Hen Met Scheve Kam'", "60 x 50 (cm)", "Acryl op doek", "Vóór 2010", "Verkocht"],
+		["'Vark'", "60 x 50 (cm)", "Acryl op doek", "Vóór 2010", "450,- (\&#8364)"]
 	];
 
 
@@ -157,17 +165,17 @@ function changeInfo(index) {
 document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37:
-        	if (total === 18) { //wanneer het aantal fotos wordt veranderd, ook hier meeveranderen!
-	            fadeOut(-1, 'abstract', 18, 'abstracten');
-            } else if (total === 13) { //wanneer het aantal fotos wordt veranderd, ook hier meeveranderen!
-            	fadeOut(-1, 'figuratief', 13, 'figuratieven');
+        	if (total === abstrTotal) { //wanneer het aantal fotos wordt veranderd, ook hier meeveranderen!
+	            fadeOut(-1, 'abstract', abstrTotal, 'abstracten');
+            } else if (total === figTotal) { //wanneer het aantal fotos wordt veranderd, ook hier meeveranderen!
+            	fadeOut(-1, 'figuratief', figTotal, 'figuratieven');
             }
             break;
         case 39:
-	        if (total === 18) { //wanneer het aantal fotos wordt veranderd, ook hier meeveranderen!
-	            fadeOut(1, 'abstract', 18, 'abstracten');
-            } else if (total === 13) { //wanneer het aantal fotos wordt veranderd, ook hier meeveranderen!
-            	fadeOut(1, 'figuratief', 13, 'figuratieven');
+	        if (total === abstrTotal) { //wanneer het aantal fotos wordt veranderd, ook hier meeveranderen!
+	            fadeOut(1, 'abstract', abstrTotal, 'abstracten');
+            } else if (total === figTotal) { //wanneer het aantal fotos wordt veranderd, ook hier meeveranderen!
+            	fadeOut(1, 'figuratief', figTotal, 'figuratieven');
             }
             break;
     }
