@@ -42,7 +42,7 @@ $(document).ready(function(){
 //SLIDESHOW FUNCTIES------------------------------
 var image_holder = document.getElementById('image_holder');
 var info_holder = document.getElementById('info_holder');
-var imagecount = 9; //welke image wordt als eerste gedisplayt? (deze moet overeen komen met de image die in figuratief.html/abstract.html staat)
+var imagecount = 12; //welke image wordt als eerste gedisplayt? (deze moet overeen komen met de image die in figuratief.html/abstract.html staat)
 var stijl;
 var infoLijst;
 
