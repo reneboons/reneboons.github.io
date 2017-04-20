@@ -98,22 +98,22 @@ function changeInfo(index) {
 
 	//LIJST VAN INFO VOOR ABSTRACTE KUNST
 	var abstracten = [["'Amarillo'", "40 x 60 (cm)", "Acryl op doek", "YYYY", "Verkocht"],		//INFO BIJ FOTO 1
-		["'Idiosyncratic Colouring'", "50 x 50 (cm)", "Acryl op doek", "2012", "425,- (\&#8364)"],	//INFO BIJ FOTO 2
-		["'Beyond Nature (II)'", "60 x 50 (cm)", "Acryl op doek", "YYYY", "425,- (\&#8364)"],		//INFO BIJ FOTO 3
+		["'Idiosyncratic Colouring'", "50 x 50 (cm)", "Acryl op doek", "2012", "550,- (\&#8364)"],	//INFO BIJ FOTO 2
+		["'The Suggestion Of Depth'", "100 x 80 (cm)", "Acryl op doek", "YYYY", "600,- (\&#8364)"],		//INFO BIJ FOTO 3
 		["'RED'", "80 x 60 (cm)", "Acryl op doek", "YYYY", "450,- (\&#8364)"],						//ETC ETC
-		["'Colorful Gravity'", "50 x 70 (cm)", "Acryl op doek", "YYYY", "450,- (\&#8364)"],
-		["'Beyond Natural (III)'", "70 x 50 (cm)", "Acryl op doek", "YYYY", "550,- (\&#8364)"],
+		["'Colourful Gravity'", "50 x 70 (cm)", "Acryl op doek", "YYYY", "550,- (\&#8364)"],
+		["'Beyond Natural (III)'", "70 x 50 (cm)", "Acryl op doek", "YYYY", "650,- (\&#8364)"],
 		["'Non Intersecting Lines'", "50 x 50 (cm)", "Acryl op doek", "YYYY", "425,- (\&#8364)"],
-		["'------'", "50 x 60 (cm)", "Acryl op doek", "YYYY", "000,- (\&#8364)"],
+		["'Harsh Profile'", "50 x 60 (cm)", "Acryl op doek", "YYYY", "450,- (\&#8364)"],
 		["'Fuzz'", "50 x 60 (cm)", "Acryl op doek", "YYYY", "450,- (\&#8364)"],
-		["'Zonder titel'", "60 x 40 (cm)", "Mixed media", "YYYY", "400,- (\&#8364)"],
+		["'Zonder titel'", "60 x 40 (cm)", "Mixed media", "YYYY", "300,- (\&#8364)"],
 		["'Green Forest'", "70 x 50 (cm)", "Acryl op doek", "YYYY", "550,- (\&#8364)"],
 		["'Imagination'", "50 x 50 (cm)", "Acryl op doek", "YYYY", "450,- (\&#8364)"],
 		["'Beyond Natural (I)'", "80 x 80 (cm)", "Acryl op doek", "YYYY", "500,- (\&#8364)"],
-		["'Mixed Up'", "50 x 50 (cm)", "Mixed media", "YYYY", "550,- (\&#8364)"],
-		["'Early Things'", "80 x 80 (cm)", "Mixed media", "YYYY", "600,- (\&#8364)"],
+		["'Mixed Up'", "50 x 50 (cm)", "Mixed media", "YYYY", "450,- (\&#8364)"],
+		["'Early Things'", "80 x 80 (cm)", "Mixed media", "YYYY", "650,- (\&#8364)"],
 		["'RED - Volume II'", "70 x 30 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
-		["'------'", "60 x 80 (cm)", "Acryl op doek", "YYYY", "550,- (\&#8364)"],
+		["'Roughness'", "60 x 80 (cm)", "Acryl op doek", "YYYY", "650,- (\&#8364)"],
 		["'Out Of The Box, Part I'", "100 x 80 (cm)", "Acryl op doek", "YYYY", "750,- (\&#8364)"]
 	];
 
@@ -128,8 +128,8 @@ function changeInfo(index) {
 		["'Scenery'", "50 x 50 (cm)", "Acryl op doek", "Vóór 2010", "425,- (\&#8364)"],
 		["'Oehoe'", "40 x 50 (cm)", "Acryl op doek", "Vóór 2010", "N.t.k."],
 		["'Kippenbende'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
-		["'Figuratief11'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "000,- (\&#8364)"],
-		["'Figuratief12'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
+		["'Kuifhoenhaan'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
+		["'Barnevelderhaan'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
 		["'Poppies'", "80 x 60 (cm)", "Acryl op doek", "YYYY", "375,- (\&#8364)"]
 	];
 
