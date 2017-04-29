@@ -593,6 +593,13 @@ table img{
 	text-align: center;
 }
 
+#pasfoto {
+	width: 194px; height: 130px;
+	background-image: url(photos/overig/zelf.jpg);
+	background-size: cover;
+	margin: 0 auto 30px auto;
+}
+
 #linkedIn_icon {
 	background-image: url(images/LinkedIn.png);
 	background-size: cover;
@@ -635,7 +642,7 @@ table img{
 
 #ART_link {
 	display: inline-block;
-	margin-left: 30px;
+	/*margin-left: 30px;*/
 }
 
 form {
@@ -736,7 +743,7 @@ input[name=verzendknop] {
 	font-size: 18px;
 }
 
-input[name=Verzendknop]:hover, input[name=Verzendknop]:focus {
+input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 	cursor: pointer;
 
 	box-shadow: 0 0 2px 0px #ba473e;
