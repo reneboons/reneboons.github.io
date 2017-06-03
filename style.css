@@ -1,3 +1,5 @@
+/*FONT SETTINGS*/
+
 @font-face {
 	font-family: customFont;
 	src: url(Corbel.ttf);
@@ -13,6 +15,7 @@
 	src: url(ERASLGHT.TTF);
 }
 
+/*GENERAL*/
 body, html {
 	position: relative;
 	margin: 0px; padding: 0px;
@@ -77,6 +80,7 @@ a:hover {
 
 /*HEADER------------------------------------------------------------*/
 #header {
+	position: relative;
 	display: inline-block;
 	width: 1200px;
 	height: 120px;
@@ -220,6 +224,12 @@ ul li:hover a {
 	opacity: 0; transition: opacity .2s ease-out;
 
 	font-family: navFont;
+}
+#phone_ab_keuze_kopje {
+	display: none;
+}
+#phone_fig_keuze_kopje {
+	display: none;
 }
 #abstract_keuze_kopje {
 	display: inline-block;
@@ -756,4 +766,240 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 	margin-left: 20px;
 
 	font-style: italic;
+}
+
+
+/*NEW STUFF, DUE TO PHONE STYLING*/
+#phone_header {
+	display: none;
+}
+
+.menu {
+	display: none;
+}
+
+/*FOR SCREENS < 800*/
+@media only screen and (max-width: 800px) {
+
+	/*MENU*/
+	.menu {
+		position: fixed;
+		visibility: hidden;
+		width: 0%; height: 0%;
+		top: 0; right: 0; bottom: 0; left: 0;
+		margin: auto;
+		background-color: #000;
+		opacity: .5;
+		z-index: 90; /*always show the menu on top of everything, except the menu button*/
+		transition: all .5s; /*how long does it take for the menu to open?*/
+	} .menuActive {
+		visibility: visible;
+		width: 100%; height: 100%;
+		opacity: 1; /*how much can i see through the menu?*/
+	}
+
+	body, html {
+		position: relative;
+		margin: 0px; padding: 0px;
+		background-color: #e1e1e1;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+
+		font-family: customFont;
+		font-size: 22px;
+		color: #262626;
+	}
+
+	#phone_header {
+		position: fixed;
+		display: block;
+		top: 0;
+		width: 100%;
+		height: 120px;
+		background-color: #262626;
+
+		z-index: 90;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+	}
+
+	.menuBtn {
+		position: fixed;
+		top: 22px; left: 22px;
+		width: 76px; height: 76px;
+		z-index: 99;
+	}
+
+	#hamburger { /*create middle hamburger piece*/
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		margin: auto;
+		width: 40px; height: 3px;
+		background-color: white;
+		transition: all .3s;
+	} #hamburger::before, #hamburger::after { /*create top and bottom hamburger piece*/
+		position: absolute;
+		width: 100%; height: 3px;
+		background-color: white;
+		content: "";
+		transition: all .4s;
+	} #hamburger::before { /*position top hamburger piece*/
+		top: -14px;
+	} #hamburger::after { /*position bottom hamburger piece*/
+		top: 14px;
+	}
+	.menuBtn.active #hamburger::before { /*animate top " " */
+		top: 0;
+		transform: rotate(45deg);
+	} .menuBtn.active #hamburger::after { /*animate bottom " " */
+		top: 0;
+		transform: rotate(-45deg);
+	} .menuBtn.active #hamburger { /*animate middle " " */
+		background: none;
+	}
+
+	#phone_logo_img {
+		height: 120px;
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		margin: auto;
+	}
+
+	#header {
+		display: none;
+	}
+
+	#wrapper {
+		width: 100%;
+		background-color: white;
+	}
+
+	#content {
+		margin: 30px 0 0 0;
+	}
+
+	#text {
+		width: 80%;
+		text-align: justify;
+		margin: 120px auto auto auto;
+		padding: 30px 0 30px 0;
+	}
+
+	#keuze_menu {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		margin: auto;
+		opacity: 0; transition: opacity .2s ease-out;
+	}
+
+	#abstract_keuze, #figuratief_keuze {
+		position: relative;
+		display: block;
+		top: 0; right: 0; bottom: 0; left: 0;
+		float: none;
+		margin: auto;
+	} #abstract_keuze img, #figuratief_keuze img {
+		position: relative;
+		display: block;
+		width: 80%; height: auto;
+		top: 0; right: 0; bottom: 0; left: 0;
+		margin: auto;
+	} #abstract_keuze {
+		margin-bottom: 60px;
+	}
+
+	#phone_ab_keuze_kopje, #phone_fig_keuze_kopje {
+		position: absolute;
+		display: inline-block;
+		width: 90%; height: auto;
+		top: 55%; right: 0; bottom: 0; left: 0;
+		transform: translateY(-42%);
+		margin: auto;
+
+		color: white;
+		font-family: navFont;
+		font-size: 100px;
+		font-weight: 500;
+
+		text-align: center;
+		z-index: 90;
+	}
+
+	#abstract_keuze_kopje {
+		display: none;
+	}
+	#figuratief_keuze_kopje {
+		display: none;
+	}
+
+	#footer {
+		height: auto; max-height: 120px;
+	}
+
+	#footer #copyright {
+		position: relative;
+		top: 0; right: 0; bottom: 0; left: 0;
+		transform: initial;
+	} #copyright p {
+		top: 15px;
+	}
+
+	#footer #creator {
+		position: relative;
+		top: 0; right: bottom: 0; left: 0;
+		margin: 30px auto 0 auto;
+		text-align: center;
+	}
+
+	.filter {
+		display: none;
+	}
+
+	#footer p {
+		font-size: 18px;
+		text-align: center;
+		width: 100%;
+	}
+	#creator p {
+		width: 100%;
+		margin: auto;
+	}
+}
+
+
+/*VARY INDEX.HTML THUMBNAIL FONTSIZE/POSITION < 700*/
+@media only screen and (max-width: 700px) {
+	#phone_ab_keuze_kopje, #phone_fig_keuze_kopje {
+
+		top: 55%;
+		transform: translateY(-46%);
+
+		font-size: 86px;
+		font-weight: 500;
+	}
+}
+
+/*VARY INDEX.HTML THUMBNAIL FONTSIZE/POSITION < 600*/
+@media only screen and (max-width: 600px) {
+	#phone_ab_keuze_kopje, #phone_fig_keuze_kopje {
+
+		top: 55%;
+		transform: translateY(-46%);
+
+		font-size: 74px;
+		font-weight: 500;
+	}
+}
+
+/*VARY INDEX.HTML THUMBNAIL FONTSIZE/POSITION < 500*/
+@media only screen and (max-width: 500px) {
+	#phone_ab_keuze_kopje, #phone_fig_keuze_kopje {
+
+		top: 55%;
+		transform: translateY(-46%);
+
+		font-size: 60px;
+		font-weight: 500;
+	}
 }
