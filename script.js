@@ -195,4 +195,28 @@ $(document).ready(function() {
         $extra2.toggle(250);
         $extra3.toggle(250);
     });
+
+    //PHONE VIEW ONLY
+    //
+	//MAKE MENU BUTTON CLICKABLE AND TOGGLE ANIMATION
+	var obj = document.querySelectorAll('.menuBtn');
+	for (i = obj.length-1; i >= 0; i--) {
+		var toggle = obj[i];
+		toggleSwitch(toggle);
+	}
+
+	function toggleSwitch(toggle) {
+		toggle.addEventListener('click', function() {
+			if (this.classList.contains('active') === true) {
+				this.classList.remove('active');
+			} else {
+				this.classList.add('active');
+			}
+		})
+	}
+
+	//TOGGLE MENU INTERFACE WHEN MENU BUTTON IS CLICKED
+	$('.menuBtn').click(function() {
+		$('.menu').toggleClass('menuActive'); //toggle menu (INVISIBLE VS VISIBLE)
+	});
 });
