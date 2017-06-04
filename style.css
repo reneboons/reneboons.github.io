@@ -778,7 +778,7 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 }
 
 /*FOR SCREENS < 800*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
 
 	/*MENU*/
 	.menu {
