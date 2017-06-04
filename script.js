@@ -219,5 +219,6 @@ $(document).ready(function() {
 	$('.menuBtn').click(function() {
 		console.log("menu clicked");
 		$('.menu').toggleClass('menuActive'); //toggle menu (INVISIBLE VS VISIBLE)
+		$('.body').toggleClass('.bodyHidden'); //hide underlaying content (so there is no more scroll bar)
 	});
 });
