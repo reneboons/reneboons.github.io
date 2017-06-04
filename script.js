@@ -217,6 +217,7 @@ $(document).ready(function() {
 
 	//TOGGLE MENU INTERFACE WHEN MENU BUTTON IS CLICKED
 	$('.menuBtn').click(function() {
+		console.log("menu clicked");
 		$('.menu').toggleClass('menuActive'); //toggle menu (INVISIBLE VS VISIBLE)
 	});
 });

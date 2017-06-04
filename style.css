@@ -784,18 +784,104 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 	/*MENU*/
 	.menu {
 		position: fixed;
+		display: block;
 		visibility: hidden;
-		width: 0%; height: 0%;
-		top: 0; right: 0; bottom: 0; left: 0;
-		margin: auto;
-		background-color: #000;
-		opacity: .5;
-		z-index: 90; /*always show the menu on top of everything, except the menu button*/
-		transition: all .5s; /*how long does it take for the menu to open?*/
-	} .menuActive {
-		visibility: visible;
 		width: 100%; height: 100%;
-		opacity: 1; /*how much can i see through the menu?*/
+		left: -100%;
+		background-color: #262626;
+		z-index: 90; /*always show the menu on top of everything, except the menu button (was 90)*/
+		transition: all .5s; /*how long does it take for the menu to open?*/
+	}
+	.menuActive {
+		visibility: visible;
+		left: 0;
+	}
+
+	
+	/*NAV STYLING*/
+	ul, li {
+		margin: 0; padding: 0;
+	}
+
+	ul li {
+		float: left;
+		background-color: white;
+		padding: 5px 0 5px 0;
+		width: 191px;
+		z-index: -1;
+
+		text-align: center;
+		list-style-type: none;
+
+		cursor: pointer;
+		border-right: 1px solid #262626;
+		box-sizing: border-box;
+	}
+
+	ul li:nth-child(1) {
+		margin-left: 0;
+	}
+
+	ul li a {
+		display: block;
+		padding-bottom: 3px;
+		text-decoration: none;
+		color: #262626;
+		height: 100%;
+		width: 100%;
+	}
+
+	ul li ul li {
+		visibility: hidden;
+		padding: 5px 0 5px 0;
+		margin-bottom: 80px;
+		opacity: 0;
+		background-color: white;
+		z-index: 1;
+
+		transform: translateY(-1em);
+		transition: transform 0.15s ease-in-out 0s, opacity .2s ease-in, z-index .1s linear;
+	}
+
+	ul li ul {
+		display: block;
+		position: absolute;
+		width: 150px;
+		z-index: -1;
+	}
+
+	ul li:hover {
+		background-color: #f5f5f5;
+	}
+
+	ul li:hover ul li {
+		display: block;
+		visibility: visible;
+		position: relative;
+		opacity: 1;
+		margin: 0;
+		padding: 5px 0 5px 0;
+		z-index: 1;
+
+		transform: translateY(10%);
+		transition-delay: 0s, 0s, 0.3s;
+	}
+
+	ul li:hover ul {
+		z-index: 1;
+	}
+
+	ul li:hover a {
+		color: #262626;
+	}
+	/*END NAV STYLING*/
+
+	#menuNavActive {
+		color: #ba473e;
+	}
+
+	#menuNavNotActive {
+		color: #ba473e;
 	}
 
 	body, html {
@@ -825,8 +911,8 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 
 	.menuBtn {
 		position: fixed;
-		top: 22px; left: 22px;
-		width: 76px; height: 76px;
+		top: 0px; left: 26px;
+		width: 70px; height: 120px;
 		z-index: 99;
 	}
 
@@ -834,12 +920,12 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 		position: absolute;
 		top: 0; right: 0; bottom: 0; left: 0;
 		margin: auto;
-		width: 40px; height: 3px;
+		width: 40px; height: 2px;
 		background-color: white;
 		transition: all .3s;
 	} #hamburger::before, #hamburger::after { /*create top and bottom hamburger piece*/
 		position: absolute;
-		width: 100%; height: 3px;
+		width: 100%; height: 2px;
 		background-color: white;
 		content: "";
 		transition: all .4s;
