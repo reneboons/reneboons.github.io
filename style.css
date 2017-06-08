@@ -1192,7 +1192,7 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 		margin-left: 10%;
 		left: 20%;
 		height: initial; 	
-		width: 100%;
+		width: 80%;
 
 		opacity: 1;
 		transition: opacity .2s, margin-top .6s ease;
@@ -1200,7 +1200,7 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 
 	#info_holder table {
 		position: relative;
-		width: 80%;
+		width: 100%;
 		float: none;
 		margin-left: 0;
 		clear: both;
@@ -1293,9 +1293,10 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 		position: relative;
 		display: block;
 		margin: auto;
-		left: 40%;
+		margin-left: 10%;
+		left: 20%;
 		height: initial; 	
-		width: 100%;
+		width: 80%;
 
 		opacity: 1;
 		transition: opacity .2s, margin-top .6s ease;
