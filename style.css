@@ -776,6 +776,10 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 	display: none;
 }
 
+#mobilePar {
+	display: none;
+}
+
 /*FOR SCREENS < 800*/
 @media only screen and (max-width: 1200px) {
 
@@ -1148,6 +1152,33 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 		opacity: 1;
 		transition: opacity .2s, margin-top .6s ease;
 	}
+
+	#papaBG {
+		background-image: url("./images/Papa.jpg");
+		background-size: cover;
+		width: 100%;
+		height: initial;
+		margin-top: 30px; margin-bottom: 60px;
+		padding: 0px 0 30px 0;
+	}
+
+	#papaBG p {
+		position: relative;
+		width: 80%;
+		margin: auto;
+		margin-top: -100px;
+
+		color: white;
+	}
+
+	#mobilePar {
+		display: block;
+		margin-top: 120px;
+	}
+
+	#overMij {
+		padding-top: 30px;
+	}
 }
 
 
@@ -1277,7 +1308,7 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 	.menuBtn {
 		position: fixed;
 		top: 0px; left: 8px;
-		width: 70px; height: 84px;
+		width: 70px; height: 92px;
 		z-index: 99;
 	}
 
