@@ -33,7 +33,6 @@ body, html {
 	position: relative;
 	width: 1200px;
 	background-color: white;
-	/*min-height: 100%;*/
 
 	box-shadow: 0px 5px 20px rgba(0, 0, 0, .2);
 }
@@ -1110,10 +1109,127 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 		width: 100%;
 	}
 
+	#image_holder {
+		display: inline-block;
+		position: relative;
+		margin: auto;
+		top: 50%;
+		left: 7%;
+		transform: translateY(-50%);
+		height: 80%;
+		width: 55%;
+
+		text-align: center;
+		opacity: 1;
+		transition: opacity .15s ease;
+		user-select: none;
+		transition-delay: .3s;
+	}
+
+	#image_holder img {
+		position: relative;
+		margin: auto;
+		max-width: 100%;
+		max-height: 100%;
+		box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, .5);
+	}
+
+	#info_holder {
+		position: absolute;
+		display: inline-block;
+		top: 20%;
+		transform: translateY(-30%);
+		right: 0%;
+		transform: translateX(-20%);
+		height: 200px; 	
+		width: 260px;
+
+		text-align: center;
+		opacity: 1;
+		transition: opacity .2s, margin-top .6s ease;
+	}
 }
 
 
-/*VARY INDEX.HTML THUMBNAIL FONTSIZE/POSITION < 700*/
+/* < 1000 */
+@media only screen and (max-width: 1000px) {
+
+	#slideshow_holder {
+		position: relative;
+		width: 97%;
+		height: auto;
+		margin: 120px auto auto auto;
+	}
+
+	#image_holder {
+		display: inline-block;
+		position: relative;
+		margin: 50px auto 40px auto;
+		height: 80%;
+		width: 90%;
+		transform: initial;
+
+		text-align: center;
+		opacity: 1;
+		transition: opacity .15s ease;
+		user-select: none;
+		transition-delay: .3s;
+	}
+
+	#image_holder img {
+		position: relative;
+		margin: auto;
+		right: 2%;
+		max-width: 100%;
+		max-height: 100%;
+		box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, .5);
+	}
+
+	#info_holder {
+		position: relative;
+		display: block;
+		margin: auto;
+		left: 20%;
+		height: initial; 	
+		width: 400px;
+
+		opacity: 1;
+		transition: opacity .2s, margin-top .6s ease;
+	}
+
+	#info_holder table {
+		position: relative;
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+
+	#info_holder table td:nth-child(odd) {
+		position: relative;
+		margin: auto;
+		color: #898989;
+	}
+
+	#info_holder table td {
+		text-align: left;
+		width: 110px;
+		margin: 0; padding: 0 0 5px 0;
+	}
+
+	#info_holder h4 {
+		text-align: left;
+	}
+
+	#arrow_left {
+		top: 260px;
+	}
+
+	#arrow_right {
+		top: 260px;
+	}
+}
+
+/* < 700 */
 @media only screen and (max-width: 700px) {
 
 	#phone_ab_keuze_kopje, #phone_fig_keuze_kopje {
@@ -1123,9 +1239,17 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 		font-size: 86px;
 		font-weight: 500;
 	}
+
+	#arrow_left {
+		display: none;
+	}
+
+	#arrow_right {
+		display: none;
+	}
 }
 
-/*VARY INDEX.HTML THUMBNAIL FONTSIZE/POSITION < 600*/
+/* < 600 */
 @media only screen and (max-width: 600px) {
 
 	#phone_ab_keuze_kopje, #phone_fig_keuze_kopje {
@@ -1137,11 +1261,7 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 	}
 }
 
-/*VARY INDEX.HTML THUMBNAIL FONTSIZE/POSITION
-*
-MENU BUTTON POSITION < 500
-*
-*/
+/* < 500 */
 @media only screen and (max-width: 500px) {
 
 	#phone_ab_keuze_kopje, #phone_fig_keuze_kopje {
