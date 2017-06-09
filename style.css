@@ -967,7 +967,7 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 		position: fixed;
 		top: 0px; left: 26px;
 		width: 70px; height: 120px;
-		z-index: 99;
+		z-index: 199;
 	}
 
 	#hamburger { /*create middle hamburger piece*/
@@ -1312,7 +1312,7 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 		position: fixed;
 		top: 0px; left: 8px;
 		width: 70px; height: 92px;
-		z-index: 99;
+		z-index: 199;
 	}
 
 	#navWrapper {
