@@ -1159,7 +1159,7 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 		width: 100%;
 		height: initial;
 		margin-top: 30px; margin-bottom: 30px;
-		padding: 0 0 30px 0;
+		padding: 0 0 0 0;
 	}
 
 	#papaBG p {
@@ -1173,6 +1173,10 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 
 	#mobilePar {
 		display: block;
+	}
+
+	#pcPar {
+		display: none;
 	}
 
 	#overMij {
