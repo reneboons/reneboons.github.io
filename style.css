@@ -967,7 +967,7 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 		position: fixed;
 		top: 0px; left: 26px;
 		width: 70px; height: 120px;
-		z-index: 199;
+		z-index: 99;
 	}
 
 	#hamburger { /*create middle hamburger piece*/
@@ -1156,6 +1156,7 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 	#papaBG {
 		background-image: url("./images/Papa.jpg");
 		background-size: cover;
+		background-position: right;
 		width: 100%;
 		height: initial;
 		margin-top: 30px; margin-bottom: 30px;
@@ -1166,7 +1167,8 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 		position: relative;
 		width: 80%;
 		margin: auto;
-		margin-top: -100px;
+		text-align: justify;
+		padding-bottom: 60px;
 
 		color: white;
 	}
@@ -1180,8 +1182,157 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 	}
 
 	#overMij {
-		padding-top: 30px;
+		padding-top: 45px;
 	}
+
+	#overMij p {
+		position: relative;
+		width: 80%;
+		margin: auto;
+
+		text-align: justify;
+
+		box-sizing: border-box;
+	}
+
+	#contact {
+		position: relative;
+		margin: 120px auto auto auto;
+		padding-top: 60px;
+	}
+
+	#pasfoto {
+		width: 194px; height: 130px;
+		background-image: url(photos/overig/zelf.jpg);
+		background-size: cover;
+		top: 400px;
+		margin: 120px auto 30px auto;
+	}
+
+	#contact > p {
+		position: relative;
+		width: 80%;
+		margin: auto;
+
+		text-align: justify;
+	}
+
+	#pasfoto {
+		width: 194px; height: 130px;
+		background-image: url(photos/overig/zelf.jpg);
+		background-size: cover;
+		margin: 0 auto 30px auto;
+	}
+
+	#linkedIn_icon {
+		background-image: url(images/LinkedIn.png);
+		background-size: cover;
+		width: 110px;
+		height: 110px;
+	}
+
+	#ART_icon {
+		background-image: url(images/ART.png);
+		background-size: cover;
+		width: 110px;
+		height: 110px;
+	}
+
+	#links {
+		position: relative;
+		display: block;
+		margin: -30px auto 30px auto;
+		text-align: center;
+	}
+	#links a {
+		position: relative;
+		display: block;
+
+		width: 110px;
+		height: 50px;
+		margin-top: 60px;
+	}
+
+	#linkedin_link {
+		display: inline-block;
+		margin-right: 30px;
+	}
+
+	#ART_link {
+		display: inline-block;
+		/*margin-left: 30px;*/
+	}
+
+	form {
+		position: relative;
+		width: 80%;
+		height: 318px;
+		margin: 40px auto 0 auto;
+	}
+
+	textarea:focus, input:focus {
+		outline: none;
+		box-shadow: inset 0 0 1px 2px #ba473e;
+	}
+
+
+	input[name=emailadress] {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		height: 30px;
+		background-color: #f5f5f5;
+		float: none;
+		padding-left: 15px; margin-bottom: 15px;
+
+		border: none;
+		border-radius: 10px;
+
+		box-sizing: border-box;
+
+		font-family: customFont;
+		font-size: 18px;
+		font-style: italic;
+	}
+
+	input[name=onderwerp] {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		height: 30px;
+		padding-left: 15px; margin-bottom: 15px;
+		float: none;
+
+		border: none;
+		border-radius: 10px;
+		font-style: italic;
+
+		box-sizing: border-box;
+
+		font-family: customFont;
+		font-size: 18px;
+
+	}
+
+	textarea[name=bericht] {
+		position: relative;
+		display: block;
+		height: 160px;
+		width: 100%; max-width: 100%;
+		background-color: #f5f5f5;
+		padding: 15px;
+
+
+		border: none;
+		border-radius: 10px;
+		box-sizing: border-box;
+
+		font-family: customFont;
+		font-size: 18px;
+		font-style: italic;
+		resize: none;
+	}
+
 }
 
 
@@ -1312,7 +1463,7 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 		position: fixed;
 		top: 0px; left: 8px;
 		width: 70px; height: 92px;
-		z-index: 199;
+		z-index: 99;
 	}
 
 	#navWrapper {
