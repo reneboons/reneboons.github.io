@@ -238,30 +238,25 @@ $(document).ready(function() {
 		if (window.location.href.slice(-10) === "atief.html") {
 
 			//ON SWIPE LEFT, GO BACK ONE IMAGE
-			$('#actualImg').on("swipeleft", function() {
+			$("#img").on("swipeleft", function(event) {
 				fadeOut(-1, 'figuratief', 16, 'figuratieven');
-				alert('on figuratief page, and swiping left');
 			});
 
-			$('#actualImg').on("swipeleft", function() {
-				fadeOut(1, 'figuratief', 16, 'figuratieven');
-				alert('hello');
+			$("#img").on("swiperight", function(event) {
+				fadeOut(1, 'figuratief', 20, 'figuratieven');
 			});
 
 			//ELSE IF ON ABSTRACT PAGE
 		} else if (window.location.href.slice(-10) === "tract.html") {
 
 			//ON SWIPE RIGHT, GO FORWARD ONE IMAGE
-			$('#actualImg').on("swipeleft", function() {
+			$("#img").on("swipeleft", function(event) {
 				fadeOut(-1, 'abstract', 16, 'figuratieven');
-				alert('on abstract page, and swiping left');
 			});
 
-			$('#actualImg').on("swipeleft", function() {
-				fadeOut(1, 'abstract', 16, 'figuratieven');
+			$("#img").on("swiperight", function(event) {
+				fadeOut(1, 'abstract', 20, 'figuratieven');
 			});
 		}
-	})
-
-	
+	})	
 });

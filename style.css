@@ -1406,11 +1406,11 @@ input[name=verzendknop]:hover, input[name=Verzendknop]:focus {
 	}
 
 	#arrow_left {
-		top: 260px;
+		display: none;
 	}
 
 	#arrow_right {
-		top: 260px;
+		display: none;
 	}
 }
 
