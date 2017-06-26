@@ -251,11 +251,11 @@ $(document).ready(function() {
 
 			//ON SWIPE RIGHT, GO FORWARD ONE IMAGE
 			$("#img").on("swipeleft", function(event) {
-				fadeOut(-1, 'abstract', 16, 'figuratieven');
+				fadeOut(-1, 'abstract', 16, 'abstract');
 			});
 
 			$("#img").on("swiperight", function(event) {
-				fadeOut(1, 'abstract', 20, 'figuratieven');
+				fadeOut(1, 'abstract', 20, 'abstract');
 			});
 		}
 	})	
