@@ -1,6 +1,6 @@
 //HET TOTAAL AANTAL AAN ABSTRACTE/FIGURATIEVE SCHILDERIJEN
 var abstrTotal = 20;
-var figTotal = 16;
+var figTotal = 6;
 
 
 //FADE IN PHOTO------------------------------------------------------------
@@ -120,8 +120,7 @@ function changeInfo(index) {
 		["'Colourful Gravity'", "50 x 70 (cm)", "Acryl op doek", "YYYY", "550,- (\&#8364)"],
 		["'Beyond Natural (III)'", "70 x 50 (cm)", "Acryl op doek", "YYYY", "650,- (\&#8364)"],
 		["'Non Intersecting Lines'", "50 x 50 (cm)", "Acryl op doek", "YYYY", "425,- (\&#8364)"],
-		["'Prevailing Green'", "50 x 60 (cm)", "Acryl op doek", "YYYY", "495,- (\&#8364)"],
-		["'Fuzz'", "50 x 60 (cm)", "Acryl op doek", "YYYY", "450,- (\&#8364)"],
+		["'Prevailing Green'", "50 x 60 (cm)", "Acryl op doek", "YYYY", "495,- (\&#8364)"]
 		["'Zonder titel'", "60 x 40 (cm)", "Mixed media", "YYYY", "300,- (\&#8364)"],
 		["'Green Forest'", "70 x 50 (cm)", "Acryl op doek", "YYYY", "550,- (\&#8364)"],
 		["'Imagination'", "50 x 50 (cm)", "Acryl op doek", "YYYY", "450,- (\&#8364)"],
@@ -132,26 +131,17 @@ function changeInfo(index) {
 		["'Roughness'", "60 x 80 (cm)", "Acryl op doek", "YYYY", "650,- (\&#8364)"],
 		["'Out Of The Box, Part I'", "100 x 80 (cm)", "Acryl op doek", "YYYY", "750,- (\&#8364)"],
 		["'Harsh Profile'", "50 x 60 (cm)", "Acryl op doek", "YYYY", "450,- (\&#8364)"],
-		["'WYSII'", "50 x 60 (cm)", "Acryl op doek", "YYYY", "495,- (\&#8364)"]
+		["'WYSII'", "50 x 60 (cm)", "Acryl op doek", "YYYY", "495,- (\&#8364)"],
+		["'Early Things II'", "60 x 60 (cm)", "Acryl op doek", "Vóór 2010", "475,- (\&#8364)"]
 	];
 
 	//LIJST VAN INFO VOOR FIGURATIEVE KUNST
-	var figuratieven = [["'Crazy Chick'", "60 x 60 (cm)", "Acryl op doek", "Vóór 2010", "475,- (\&#8364)"],	//INFO BIJ FOTO 1
-		["'Brandrode Koe'", "50 x 70 (cm)", "Acryl op doek", "Vóór 2010", "425,- (\&#8364)"],				//INFO BIJ FOTO 2
-		["'Koolzaadveld'", "70 x 50 (cm)", "Acryl op doek", "Vóór 2010", "Verkocht"],							//INFO BIJ FOTO 3
-		["'La Joconde'", "60 x 60 (cm)", "Acryl op doek", "Vóór 2010", "425,- (\&#8364)"],					//ETC ETC
+	var figuratieven = [["'Crazy Chick'", "60 x 60 (cm)", "Acryl op doek", "Vóór 2010", "475,- (\&#8364)"],			
+		["'Koolzaadveld'", "70 x 50 (cm)", "Acryl op doek", "Vóór 2010", "Verkocht"],							
 		["'Vos'", "60 x 80 (cm)", "Acryl op doek", "YYYY", "475,- (\&#8364)"],
-		["'Le Chef De Bande'", "60 x 80 (cm)", "Acryl op doek", "YYYY", "550,- (\&#8364)"],
-		["'Zwartbont tussen de schuifdeuren'", "70 x 50 (cm)", "Acryl op doek", "Vóór 2010", "500,- (\&#8364)"],
 		["'Scenery'", "50 x 50 (cm)", "Acryl op doek", "Vóór 2010", "425,- (\&#8364)"],
 		["'Oehoe'", "40 x 50 (cm)", "Acryl op doek", "Vóór 2010", "N.t.k."],
-		["'Groep Varkens'", "60 x 50 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
-		["'Kuifhoen Haan'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
-		["'Barnevelder Haan'", "120 x 80 (cm)", "Acryl op doek", "YYYY", "Verkocht"],
-		["'Poppies'", "80 x 60 (cm)", "Acryl op doek", "YYYY", "375,- (\&#8364)"],
-		["'Owl'", "60 x 60 (cm)", "Acryl op doek", "Vóór 2010", "425,- (\&#8364)"],
-		["'Hen Met Scheve Kam'", "60 x 50 (cm)", "Acryl op doek", "Vóór 2010", "Verkocht"],
-		["'Vark'", "60 x 50 (cm)", "Acryl op doek", "Vóór 2010", "450,- (\&#8364)"]
+		["'Owl'", "60 x 60 (cm)", "Acryl op doek", "Vóór 2010", "425,- (\&#8364)"]
 	];
 
 
