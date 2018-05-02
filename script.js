@@ -123,6 +123,7 @@ function changeInfo(index) {
 		["'Prevailing Green'", "50 x 60 (cm)", "Acryl op doek", "YYYY", "495,- (\&#8364)"]
 		["'Zonder titel'", "60 x 40 (cm)", "Mixed media", "YYYY", "300,- (\&#8364)"],
 		["'Green Forest'", "70 x 50 (cm)", "Acryl op doek", "YYYY", "550,- (\&#8364)"],
+		["'Early Things II'", "60 x 60 (cm)", "Acryl op doek", "YYYY", "475,- (\&#8364)"],
 		["'Imagination'", "50 x 50 (cm)", "Acryl op doek", "YYYY", "450,- (\&#8364)"],
 		["'Beyond Natural (I)'", "80 x 80 (cm)", "Acryl op doek", "YYYY", "500,- (\&#8364)"],
 		["'Mixed Up'", "50 x 50 (cm)", "Mixed media", "YYYY", "450,- (\&#8364)"],
@@ -132,7 +133,6 @@ function changeInfo(index) {
 		["'Out Of The Box, Part I'", "100 x 80 (cm)", "Acryl op doek", "YYYY", "750,- (\&#8364)"],
 		["'Harsh Profile'", "50 x 60 (cm)", "Acryl op doek", "YYYY", "450,- (\&#8364)"],
 		["'WYSII'", "50 x 60 (cm)", "Acryl op doek", "YYYY", "495,- (\&#8364)"],
-		["'Early Things II'", "60 x 60 (cm)", "Acryl op doek", "Vóór 2010", "475,- (\&#8364)"]
 	];
 
 	//LIJST VAN INFO VOOR FIGURATIEVE KUNST
